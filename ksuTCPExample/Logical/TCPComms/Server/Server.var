@@ -1,0 +1,37 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Package: LibAsTCP
+ * File: LibAsTCP.var
+ * Author: Bernecker + Rainer
+ * Created: February 21, 2008
+ ********************************************************************
+ * Variables of package LibAsTCP
+ ********************************************************************)
+VAR
+	Data : Data_typ;
+	ShuttleRoute : ARRAY[0..20] OF USINT;
+	TempSeqNum : UDINT;
+	j : USINT;
+	i : USINT;
+	RouteBoolArray : ARRAY[0..63] OF BOOL;
+	TON_MessageTimeout : TON;
+	OwnPort : UINT;
+	Server : Server_typ := (0); (*Data for Server Task*)
+	VariablesNotFound : ARRAY[0..29] OF STRING[50];
+	Debug : ARRAY[0..29] OF STRING[50];
+	MessageData : Data_typ;
+	MessageSize : UDINT;
+	MessageType : UDINT;
+	RouteUINTArray : ARRAY[0..63] OF UINT;
+	Byte2Bit_0 : Byte2Bit;
+	prevStep : UINT;
+	TON_Reopen : TON;
+	LogQueueData : Data_typ;
+	LogMessageData : EventLog_Event_typ;
+	shuttleID_int : UINT;
+	shuttleLoc_int : UDINT;
+	shuttleLoc : STRING[4];
+	shuttleID : STRING[4];
+	routeStep : STRING[4];
+END_VAR

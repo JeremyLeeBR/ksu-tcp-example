@@ -1,0 +1,4 @@
+VAR
+	gSendQueue : FifoQueue_typ;
+	gMessageToEZ3 : MessageToEZ3_typ;
+END_VAR

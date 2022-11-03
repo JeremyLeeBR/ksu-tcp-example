@@ -1,0 +1,16 @@
+(********************************************************************
+ * COPYRIGHT -- B&R
+ ********************************************************************
+ * Library: BRSE_JSON
+ * File: BRSE_JSON.var
+ * Author: Florian Damerow
+ * Created: April 05, 2011
+ ********************************************************************
+ * Constants of library BRSE_JSON
+ ********************************************************************)
+VAR CONSTANT
+	MAX_STRUCT_NAME_LENGTH_Parse : USINT := 200;
+	MAX_STRUCT_DEPTH_Stringify : USINT := 20;
+	MAX_STRUCT_DEPTH_Parse : USINT := 20;
+	MAX_OUTPUT_LENGTH_Stringify : UDINT := 20000;
+END_VAR

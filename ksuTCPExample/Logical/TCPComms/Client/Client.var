@@ -1,0 +1,23 @@
+(********************************************************************
+ * COPYRIGHT -- Bernecker + Rainer
+ ********************************************************************
+ * Package: LibAsTCP
+ * File: LibAsTCP.var
+ * Author: Bernecker + Rainer
+ * Created: February 21, 2008
+ ********************************************************************
+ * Variables of package LibAsTCP
+ ********************************************************************)
+VAR
+	ReconnectWait : BOOL;
+	ClientConnected : BOOL;
+	TON_Reopen : TON;
+	Client : Client_typ := (0); (*Data for Client Task*)
+	ServerPort : UINT;
+	ServerIP : STRING[20];
+	SendData : Data_typ;
+	prevStep : UINT;
+	message_tmp : Data_typ;
+	CreateTestMessage1 : BOOL;
+	JSON_Stringify_0 : JSON_Stringify;
+END_VAR
